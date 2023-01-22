@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Todo List | Login Page</title>
+    <title>Todo List | Register Page</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
@@ -40,23 +40,35 @@
         </div>
     </nav>
     <main class="container">
-        <h1 class="text-center">Login to see your to do list</h1>
-        <form class="w-75 mx-auto">
+        <h1 class="text-center">Register to create a to do list</h1>
+        <form class="mx-auto w-75">
             <div class="form-group">
                 <label>Email Address</label><br />
-                <input type="email" class="form-control" placeholder="example@email.com" /><br />
+                <input class="form-control" type="email" placeholder="Enter Email" required /><br />
+            </div>
+            <div class="form-group">
+                <label>Username</label><br />
+                <input class="form-control" type="text" placeholder="myusername"><br />
+            </div>
+            <div class="form-group">
+                <label>Date of Birth</label><br />
+                <input class="form-control" type="date"><br />
             </div>
             <div class="form-group">
                 <label>Password</label><br />
-                <input type="password" class="form-control" placeholder="Enter Password" /><br />
+                <input class="form-control" type="password" placeholder="Enter Password" required><br />
             </div>
             <div class="form-group">
-                <label>Remember me?</label>
+                <label>Confirm Password</label><br />
+                <input class="form-control" type="password" placeholder="Confirm Password" required><br />
+            </div>
+            <div class="form-group">
+                <label>Are you human?</label>
                 <input type="checkbox" />
             </div>
             <button class="btn btn-primary btn-md">SUBMIT</button>
         </form>
-        <p class="w-75 mx-auto">If you don't have an account <a href="./register.html">Register</a></p>
+        <p class="mx-auto w-75">If you have an account <a href="./login.html">Login</a></p>
     </main>
 </body>
 
